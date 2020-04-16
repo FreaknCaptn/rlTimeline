@@ -8,6 +8,7 @@ import { TimelineEvent, rocketLegueEvents } from 'src/assets/data';
 })
 export class TimelineComponent implements OnInit {
   public timelineEvents: TimelineEvent[];
+  public assestsLocation = '../../assets/images/';
 
   constructor() { }
 

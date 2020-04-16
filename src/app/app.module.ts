@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { TimelineComponent } from './timeline/timeline.component';
+import { MglTimelineModule } from 'angular-mgl-timeline';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { TimelineComponent } from './timeline/timeline.component';
   imports: [
     BrowserModule,
     MatToolbarModule,
+    MglTimelineModule,
     BrowserAnimationsModule
   ],
   providers: [],
