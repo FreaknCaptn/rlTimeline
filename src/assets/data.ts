@@ -11,7 +11,7 @@ export const rocketLegueEvents: TimelineEvent[] = [
         HeaderContent: 'Kuxir, Markydooda and Greazy',
         Content: 'More Info',
         SideImage: 'rlcsSeason03.jpg',
-        Date: new Date('2016-08-07'),
+        Date: new Date('2015-08-07'),
     },
     {
         Header: 'RLCS Season 3: Northern Gaming',
@@ -60,7 +60,7 @@ export const rocketLegueEvents: TimelineEvent[] = [
         HeaderContent: 'Coronavirus',
         Content: 'More Info',
         SideImage: 'rlcsSeason03.jpg',
-        Date: new Date('2016-08-07'),
+        Date: new Date('2020-08-07'),
     }
 ]
 
