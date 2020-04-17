@@ -13,6 +13,11 @@
 
 .header {
     background-color: #45A29E;
+    min-height: 12rem;
+}
+
+.content {
+    background-color: #45A29E;
 }
 
 .mgl-timeline-line {
@@ -20,3 +25,7 @@
 }
 
 
+.desktop-content{
+    width: 75%;
+    margin: auto;
+}

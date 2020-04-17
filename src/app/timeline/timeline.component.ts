@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TimelineEvent, rocketLegueEvents } from 'src/assets/data';
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
   selector: 'app-timeline',
@@ -9,10 +10,14 @@ import { TimelineEvent, rocketLegueEvents } from 'src/assets/data';
 export class TimelineComponent implements OnInit {
   public timelineEvents: TimelineEvent[];
   public assestsLocation = '../../assets/images/';
+  public isMobile: boolean;
 
-  constructor() { }
+  constructor(
+    private deviceService: DeviceDetectorService
+  ) { }
 
   ngOnInit(): void {
+    this.isMobile = this.deviceService.isMobile();
     this.organizeEventsByDate();
   }
 

@@ -7,6 +7,7 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { TimelineComponent } from './timeline/timeline.component';
 import { MglTimelineModule } from 'angular-mgl-timeline';
+import { DeviceDetectorModule } from 'ngx-device-detector';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { MglTimelineModule } from 'angular-mgl-timeline';
   imports: [
     BrowserModule,
     MatToolbarModule,
+    DeviceDetectorModule.forRoot(),
     MglTimelineModule,
     BrowserAnimationsModule
   ],
