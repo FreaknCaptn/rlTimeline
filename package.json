@@ -24,6 +24,7 @@
     "angular-mgl-timeline": "^0.3.3",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
+    "ngx-device-detector": "^1.3.11",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
