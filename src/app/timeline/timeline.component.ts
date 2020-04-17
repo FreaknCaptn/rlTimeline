@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { TimelineEvent, rocketLegueEvents } from 'src/assets/data';
+import { rocketLegueEvents } from 'src/assets/data';
 import { DeviceDetectorService } from 'ngx-device-detector';
+import { TimelineEvent } from 'src/assets/timelineEvents';
 
 @Component({
   selector: 'app-timeline',

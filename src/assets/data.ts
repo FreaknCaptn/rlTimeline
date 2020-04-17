@@ -1,4 +1,8 @@
+import { TimelineEvent } from './timelineEvents';
+import { rlcsSeason09Cancelled } from './TimelineEvents/rlcsSeason09Cancelled';
+
 export const rocketLegueEvents: TimelineEvent[] = [
+    rlcsSeason09Cancelled,
     {
         Header: 'RLCS Season 1: iBuyPower',
         HeaderContent: 'Kronovi, Lachino and Overzero',
@@ -55,21 +59,8 @@ export const rocketLegueEvents: TimelineEvent[] = [
         SideImage: 'nrgSeason08Champions.png',
         Date: new Date('2019-12-15'),
     },
-    {
-        Header: 'Season 9 World Championship cancelled',
-        HeaderContent: 'Due to worldwide health concerns surrounding the developing situation around the Coronavirus (COVID-19), Psyonix cancelled the Rocket League Season 9 World Championship scheduled from April 24-26 in Dallas, Texas',
-        Content: '',
-        SideImage: 'temp.jpg',
-        Date: new Date('2020-03-05'),
-    }
+
 ]
 
-export interface TimelineEvent {
-    Header: string;
-    HeaderContent: string;
-    Content: string;
-    SideImage: string;
-    Date: Date
-}
 
 
