@@ -52,15 +52,15 @@ export const rocketLegueEvents: TimelineEvent[] = [
         Header: 'RLCS Season 8: NRG',
         HeaderContent: 'GarretG, JSTN and Turbopolsa',
         Content: 'More Info',
-        SideImage: 'temp.jpg',
+        SideImage: 'nrgSeason08Champions.png',
         Date: new Date('2019-12-15'),
     },
     {
-        Header: 'RLCS Season 9: CANCELLED',
-        HeaderContent: 'Coronavirus',
-        Content: 'More Info',
+        Header: 'Season 9 World Championship cancelled',
+        HeaderContent: 'Due to worldwide health concerns surrounding the developing situation around the Coronavirus (COVID-19), Psyonix cancelled the Rocket League Season 9 World Championship scheduled from April 24-26 in Dallas, Texas',
+        Content: '',
         SideImage: 'temp.jpg',
-        Date: new Date('2020-08-07'),
+        Date: new Date('2020-03-05'),
     }
 ]
 
