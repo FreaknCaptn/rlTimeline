@@ -5,4 +5,5 @@ export const rlcsSeason03Champions: TimelineEvent = {
     HeaderContent: 'Remkoe, Deevo and Turbopolsa',
     SideImage: 'temp.jpg',
     Date: new Date('2017-06-04'),
+    Links: [],
 }

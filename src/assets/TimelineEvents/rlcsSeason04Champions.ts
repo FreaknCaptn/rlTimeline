@@ -5,4 +5,5 @@ export const rlcsSeason04Champions: TimelineEvent = {
     HeaderContent: 'Violentpanda, Kaydop and Turbopolsa',
     SideImage: 'temp.jpg',
     Date: new Date('2017-11-12'),
+    Links: [],
 }
