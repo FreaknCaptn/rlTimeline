@@ -6,6 +6,6 @@ export const rlcsSeason09Cancelled: TimelineEvent =     {
     SideImage: 'temp.jpg',
     Date: new Date('2020-03-05'),
     Links: [
-        new ReferenceLink('Psyonix announces the cancellation of Worlds', 'https://www.google.com')
+        new ReferenceLink('Important Rocket League eSports update', 'https://www.rocketleagueesports.com/news/important-rocket-league-esports-update/'),
     ],
 }
