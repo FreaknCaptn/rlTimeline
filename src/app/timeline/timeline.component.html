@@ -9,6 +9,14 @@
             </div>
         </mgl-timeline-entry-header>
         <mgl-timeline-entry-content class="content">
+            <div *ngIf="event.Videos.length">
+                <b>Videos:</b>
+                <div *ngFor="let video of event.Videos">
+                    <h5 style="margin-bottom: .5rem;">{{ video.LinkText }}</h5>
+                    <iframe  [src]="sanitizer.bypassSecurityTrustResourceUrl(video.LinkUrl)" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                    allowfullscreen></iframe>                
+                </div>
+            </div>
             <div *ngIf="event.Links.length">
                 <b>Reference Links:</b>
                 <ul class="link-list">

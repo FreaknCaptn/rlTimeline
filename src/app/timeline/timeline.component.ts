@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { rocketLegueEvents } from 'src/assets/data';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import { TimelineEvent } from 'src/assets/timelineEvents';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-timeline',
@@ -14,7 +15,8 @@ export class TimelineComponent implements OnInit {
   public isMobile: boolean;
 
   constructor(
-    private deviceService: DeviceDetectorService
+    private deviceService: DeviceDetectorService,
+    public sanitizer: DomSanitizer
   ) { }
 
   ngOnInit(): void {
