@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { rocketLegueEvents } from 'src/assets/data';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import { TimelineEvent } from 'src/assets/timelineEvents';
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-timeline',
@@ -16,11 +16,13 @@ export class TimelineComponent implements OnInit {
 
   constructor(
     private deviceService: DeviceDetectorService,
-    public sanitizer: DomSanitizer
+    public sanitizer: DomSanitizer,
+    private titleService: Title
   ) { }
 
   ngOnInit(): void {
     this.isMobile = this.deviceService.isMobile();
+    this.titleService.setTitle('Rocket League: Timeline')
     this.organizeEventsByDate();
   }
 
