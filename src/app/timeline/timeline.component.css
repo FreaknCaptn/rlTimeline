@@ -29,3 +29,11 @@
     width: 75%;
     margin: auto;
 }
+
+.link-list{
+    margin: .5rem;
+}
+
+.link {
+    font-size: .8rem;
+}
