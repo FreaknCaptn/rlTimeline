@@ -7,9 +7,11 @@ import { rlcsSeason05Champions } from './TimelineEvents/rlcsSeason05Champions';
 import { rlcsSeason06Champions } from './TimelineEvents/rlcsSeason06Champions';
 import { rlcsSeason07Champions } from './TimelineEvents/rlcsSeason07Champions';
 import { rlcsSeason08Champions } from './TimelineEvents/rlcsSeason08Champions';
+import { rlcsSeason02Champions } from './TimelineEvents/rlcsSeason02Champions';
 
 export const rocketLegueEvents: TimelineEvent[] = [
     rlcsSeason01Champions,
+    rlcsSeason02Champions,
     rlcsSeason03Champions,
     rlcsSeason04Champions,
     rlcsSeason05Champions,
