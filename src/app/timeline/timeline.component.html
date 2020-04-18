@@ -13,7 +13,7 @@
                 <b>Videos:</b>
                 <div *ngFor="let video of event.Videos">
                     <h5 style="margin-bottom: .5rem;">{{ video.LinkText }}</h5>
-                    <iframe  [src]="sanitizer.bypassSecurityTrustResourceUrl(video.LinkUrl)" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                    <iframe  [src]="sanitizer.bypassSecurityTrustResourceUrl(video.LinkUrl)" width="100%" [height]="isMobile ? '250px' : '300px'" frameborder="0" webkitallowfullscreen mozallowfullscreen
                     allowfullscreen></iframe>                
                 </div>
             </div>
@@ -27,7 +27,7 @@
             </div>
         </mgl-timeline-entry-content>
         <mgl-timeline-entry-side style="height: 100%;">
-            <div class="image-container">
+            <div *ngIf="!isMobile" class="image-container">
                 <img class="side-image" [src]="assestsLocation + event.SideImage">
             </div>
         </mgl-timeline-entry-side>
