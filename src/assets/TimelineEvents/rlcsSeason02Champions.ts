@@ -5,5 +5,6 @@ export const rlcsSeason02Champions: TimelineEvent =     {
     HeaderContent: 'Kuxir marky greaz',
     SideImage: 'temp.jpg',
     Date: new Date('2017-06-04'),
+    Videos: [],
     Links: [],
 }

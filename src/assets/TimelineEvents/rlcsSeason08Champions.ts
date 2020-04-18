@@ -5,5 +5,6 @@ export const rlcsSeason08Champions: TimelineEvent = {
     HeaderContent: 'GarretG, JSTN and Turbopolsa',
     SideImage: 'nrgSeason08Champions.png',
     Date: new Date('2019-12-15'),
+    Videos: [],
     Links: [],
 }

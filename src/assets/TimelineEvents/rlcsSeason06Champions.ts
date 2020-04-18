@@ -5,5 +5,6 @@ export const rlcsSeason06Champions: TimelineEvent = {
     HeaderContent: 'Squishy, Torment and Gimmick',
     SideImage: 'temp.jpg',
     Date: new Date('2018-11-11'),
+    Videos: [],
     Links: [],
 }

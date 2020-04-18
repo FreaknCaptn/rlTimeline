@@ -5,5 +5,6 @@ export const rlcsSeason07Champions: TimelineEvent = {
     HeaderContent: 'Kaydop, Fairypeak and Scrub Killa',
     SideImage: 'temp.jpg',
     Date: new Date('2019-06-23'),
+    Videos: [],
     Links: [],
 }

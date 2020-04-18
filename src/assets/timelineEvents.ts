@@ -2,8 +2,9 @@ export interface TimelineEvent {
     Header: string;
     HeaderContent: string;
     SideImage: string;
-    Links: ReferenceLink[]
-    Date: Date
+    Videos: ReferenceLink[];
+    Links: ReferenceLink[];
+    Date: Date;
 }
 
 export class ReferenceLink {
