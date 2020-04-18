@@ -12,28 +12,27 @@
 }
 
 .header {
-    background-color: #45A29E;
+    background-color: #45a29e;
     min-height: 12rem;
 }
 
 .content {
-    background-color: #45A29E;
+    background-color: #45a29e;
 }
 
 .mgl-timeline-line {
     background-color: red !important;
 }
 
-
-.desktop-content{
+.desktop-content {
     width: 75%;
     margin: auto;
 }
 
-.link-list{
-    margin: .5rem;
+.link-list {
+    margin: 0.5rem;
 }
 
 .link {
-    font-size: .8rem;
+    font-size: 0.8rem;
 }
