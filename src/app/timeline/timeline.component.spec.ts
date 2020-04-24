@@ -1,25 +1,32 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TimelineComponent } from './timeline.component';
+import { DeviceDetectorService } from 'ngx-device-detector';
 
-describe('TimelineComponent', () => {
-  let component: TimelineComponent;
+describe('Timeline Component', () => {
+  let timelineComponent: TimelineComponent;
   let fixture: ComponentFixture<TimelineComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ TimelineComponent ]
-    })
-    .compileComponents();
-  }));
-
   beforeEach(() => {
+    const declarations = [
+      TimelineComponent
+    ];
+
+    const providers = [
+      { provide: DeviceDetectorService, useValue: { isMobile: () => false } }
+    ];
+
+    TestBed.configureTestingModule({
+      declarations,
+      providers
+    }).compileComponents();
+
     fixture = TestBed.createComponent(TimelineComponent);
-    component = fixture.componentInstance;
+    timelineComponent = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should initialize timeline component', () => {
+    expect(timelineComponent).toBeTruthy();
   });
 });
