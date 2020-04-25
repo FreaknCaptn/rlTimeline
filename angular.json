@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "rocket-league-timeline": {
+    "rl-timeline": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/rocket-league-timeline",
+            "outputPath": "dist/rl-timeline",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "rocket-league-timeline:build"
+            "browserTarget": "rl-timeline:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "rocket-league-timeline:build:production"
+              "browserTarget": "rl-timeline:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "rocket-league-timeline:build"
+            "browserTarget": "rl-timeline:build"
           }
         },
         "test": {
@@ -112,18 +112,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "rocket-league-timeline:serve"
+            "devServerTarget": "rl-timeline:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "rocket-league-timeline:serve:production"
+              "devServerTarget": "rl-timeline:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "rocket-league-timeline",
+  "defaultProject": "rl-timeline",
   "cli": {
     "analytics": false
   }
