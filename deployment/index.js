@@ -14,7 +14,7 @@ const config = {
     password: password,
     host: host,
     port: 21,
-    localRoot: "../dist/rl-timeline",
+    localRoot: "./dist/rl-timeline",
     remoteRoot: "/public_html/rl-timeline/",
     include: ["*", "**/*"],
     deleteRemote: true,
