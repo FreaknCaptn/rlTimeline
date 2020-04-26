@@ -5,10 +5,6 @@ const user = process.env.rlTimelineFTPuser;
 const password = process.env.rlTimelineFTPpassword;
 const host = process.env.rlTimelineFTPhost;
 
-console.log('user', user);
-console.log('password', password);
-console.log('host', host);
-
 if (!user || !password || !host) {
     return;
 }
@@ -19,7 +15,7 @@ const config = {
     host: host,
     port: 21,
     localRoot: "../dist/rl-timeline",
-    remoteRoot: "/public_html/temp/",
+    remoteRoot: "/public_html/rl-timeline/",
     include: ["*", "**/*"],
     deleteRemote: true,
     forcePasv: true
