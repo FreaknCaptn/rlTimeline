@@ -15,7 +15,7 @@ const config = {
     host: host,
     port: 21,
     localRoot: "./dist/rl-timeline",
-    remoteRoot: "/public_html/rl-timeline/",
+    remoteRoot: "/public_html/rltimeline.com/",
     include: ["*", "**/*"],
     deleteRemote: true,
     forcePasv: true
