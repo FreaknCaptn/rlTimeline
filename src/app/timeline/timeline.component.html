@@ -2,7 +2,7 @@
     <mgl-timeline-entry *ngFor="let event of timelineEvents">
         <mgl-timeline-entry-header class="header">
             <div>
-                <img *ngIf="isMobile" class="side-image" [src]="assestsLocation + event.SideImage">
+                <img  class="side-image" [src]="assestsLocation + event.SideImage">
                 <h3 style="margin-bottom: 0px;">{{ event.Header }}</h3>
                 <h5 style="margin-top: 0px;">{{ event.Date | date }}</h5>
                 <p [class]="isMobile ? '': 'desktop-content'">{{ event.HeaderContent }}</p>
@@ -26,11 +26,6 @@
                 </ul>
             </div>
         </mgl-timeline-entry-content>
-        <mgl-timeline-entry-side style="height: 100%;">
-            <div *ngIf="!isMobile" class="image-container">
-                <img class="side-image" [src]="assestsLocation + event.SideImage">
-            </div>
-        </mgl-timeline-entry-side>
     </mgl-timeline-entry>
 
 </mgl-timeline>
