@@ -2,7 +2,7 @@ import { TimelineEvent, ReferenceLink } from '../timelineEvents';
 
 export const rlcsSeason01Champions: TimelineEvent = {
     Header: 'RLCS Season 1 World Championship',
-    HeaderContent: 'Kronovi, Lachinio and OverZero',
+    HeaderContent: 'iBuyPower (Kronovi, Lachinio and OverZero) win the 1st RLCS tournament',
     SideImage: 'rlcsSeason01.png',
     Date: new Date('2016-08-07'),
     Videos: [
