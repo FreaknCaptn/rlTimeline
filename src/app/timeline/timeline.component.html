@@ -4,7 +4,7 @@
             <div>
                 <img  class="side-image" [src]="assestsLocation + event.SideImage">
                 <h3 style="margin-bottom: 0px;">{{ event.Header }}</h3>
-                <h5 style="margin-top: 0px;">{{ event.Date | date }}</h5>
+                <p style="margin-top: 0px;"><i>{{ event.Date | date }}</i></p>
                 <p [class]="isMobile ? '': 'desktop-content'">{{ event.HeaderContent }}</p>
             </div>
         </mgl-timeline-entry-header>
