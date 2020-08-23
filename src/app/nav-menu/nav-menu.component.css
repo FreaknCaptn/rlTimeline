@@ -1,6 +1,13 @@
 .mat-toolbar.mat-primary {
-    overflow: hidden;
-    background-color: #0B0C10;
-    color: #66FCF1;
-    font-weight: bold;
-  }
+  overflow: hidden;
+  background-color: #0B0C10;
+  color: #66FCF1;
+  font-weight: bold;
+}
+
+mat-toolbar {
+  height: 64px;
+  position: fixed;
+  z-index: 100;
+  width: 100% !important;
+}
